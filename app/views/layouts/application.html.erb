@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Lance</title>
-    <%= csrf_meta_tags %>
+    <head>
+        <title>Lance</title>
+        <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
 
-  <body>
-    <%= yield %>
-  </body>
+    <body>
+        <div style="text-align:center;">
+            <h1>Welcome to Jousting</h1>
+            <h2>A Short Blurb About my Original Dream-Profession</h2>
+            <h3>(if you found this page by googling "Lance" and want information on Lance Armstrong, feel free to go
+                <a href="http://hell.com/">here</a>)</h3>
+            <p>
+                <img src="http://www.sportingopportunities.com/Content/Images/Uploads/shared/Blog%20Images%2Fjousting-20-sports-facts-c.jpg"/></p>
+            <p>
+                If we're being honest, the 2001 epic
+                <em>A Knight's Tale</em>
+                was a dangerous movie to allow your 11-year-old son and his friends to watch at a sleepover. Never again would the backyard be littered with sticks, as every twig could be a sword, and every branch a lance.
+            </p>
+            <p>In a joust, who would win?
+            </p>
+            <select>
+                <option value="Ben">Ben</option>
+                <option value="Kendrick">Kendrick</option>
+                <option value="Phil">Phil</option>
+            </select>
+            vs
+            <form>
+                <select name="Dave!" id="mySelect">
+                    <option>Dave</option>
+                    <option>Other Dave</option>
+                </select>
+            </form>
+            <button onclick="myFunction()">Calculate!</button>
+
+            <script>
+                function myFunction() {
+                    alert("DAVE ALWAYS WINS!")
+                }
+            </script>
+
+            <p>
+                Let me know if that returns anything other than the obvious, and see below for more commonly know knights of the 12th century:
+            </p>
+            <button class="accordion">King Arthuur</button>
+
+            <button class="accordion">King Richard</button>
+
+            <button class="accordion">Henry the Young King</button>
+
+        </div>
+    </body>
+
 </html>

@@ -1,15 +1,25 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+}
+button.accordion {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 275px;
+    text-align: left;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: grey;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: yellow;
+    display: none;
+}
