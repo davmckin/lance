@@ -30,16 +30,20 @@
             </select>
             vs
             <form>
-                <select name="Dave!" id="mySelect">
+                <select name="Dave!" id="daveoptions">
                     <option>Dave</option>
                     <option>Other Dave</option>
                 </select>
             </form>
             <button onclick="myFunction()">Calculate!</button>
 
+            <p id="id"></p>
+
+
             <script>
                 function myFunction() {
-                    alert("DAVE ALWAYS WINS!")
+                    var x = document.getElementById("daveoptions").name;
+                    document.getElementById("id").innerHTML = x;
                 }
             </script>
 
